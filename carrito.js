@@ -1,6 +1,5 @@
 /*        PINTAR PRODUCTOS EN EL CARRITO*/
 const pintarProductosEnElCarrito = (producto) => {
-  console.log(producto);
   const contenedorModal = document.getElementById("modal-body");
 
   const div = document.createElement("div");
@@ -44,7 +43,6 @@ const elementoAEliminar = document.querySelector(".modal-body");
 
 elementoAEliminar.addEventListener("click", (e) => {
   if (e.target.classList.contains("boton-eliminar")) {
-    console.log(e.target.value);
     eliminarProductoCarrito(e.target.value);
   }
 });
@@ -147,7 +145,6 @@ sumarORestar.addEventListener("click", (e) => {
       productoRepetido.cantidad--;
     } else {
       eliminarProductoCarrito(productoRepetido.id);
-      console.log(productoRepetido.id);
     }
   }
   actualizarCarritoPorEliminados(carrito);

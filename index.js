@@ -32,7 +32,6 @@ const pintarProductos = (respuesta) => {
 
   contenedor.addEventListener("click", (e) => {
     if (e.target.classList.contains("agregar")) {
-      console.log(e.target.id);
       chequearProductos(e.target.id);
     }
   });
