@@ -22,7 +22,6 @@ const actualizarProductosCarrito = (carrito) => {
     (acc, item) => acc + item.cantidad * item.precio,
     0
   );
-
   pintarCantidadCarrito(cantidadTotal, montoTotalCompra);
   guardarStorageCarrito(carrito);
 };
@@ -44,7 +43,6 @@ const pintarCantidadCarrito = (cantidad, monto) => {
 const elementoAEliminar = document.querySelector(".modal-body");
 
 elementoAEliminar.addEventListener("click", (e) => {
-  // e.stopPropagation()
   if (e.target.classList.contains("boton-eliminar")) {
     console.log(e.target.value);
     eliminarProductoCarrito(e.target.value);
@@ -59,9 +57,6 @@ const eliminarProductoCarrito = (productoId) => {
   carrito[productoIndice].cantidad = 1;
   carrito.splice(productoIndice, 1);
   actualizarCarritoPorEliminados(carrito);
-  // console.log(productoIndice)
-  // carritoActualizado(carrito)
-  // actualizarCarrito(carrito)
 };
 /*      ACTUALIZAR CARRITO CON PRODUCTOS ELIMINADOS*/
 
@@ -130,23 +125,18 @@ finalizar.addEventListener("click", (e) => {
   }
 });
 
-// /*agregar o eliminar 1 solo producto desde el modal del carrito */
-
-/*sumar o restar*/
+/*agregar o eliminar 1 solo producto desde el modal del carrito */
 
 const sumarORestar = document.querySelector(".modal-body");
 
 sumarORestar.addEventListener("click", (e) => {
   if (e.target.classList.contains("sumar")) {
     productoId = e.target.value;
-
     const productoRepetido = carrito.find(
       (producto) => productoId == producto.id
     );
-
     productoRepetido.cantidad++;
   }
-  // actualizarCarritoPorEliminados(carrito)
   if (e.target.classList.contains("restar")) {
     productoId = e.target.value;
     const productoRepetido = carrito.find(
@@ -155,12 +145,9 @@ sumarORestar.addEventListener("click", (e) => {
 
     if (productoRepetido.cantidad > 1) {
       productoRepetido.cantidad--;
-      // actualizarCarritoPorEliminados(carrito)
     } else {
       eliminarProductoCarrito(productoRepetido.id);
-
       console.log(productoRepetido.id);
-      // actualizarCarritoPorEliminados(carrito)
     }
   }
   actualizarCarritoPorEliminados(carrito);

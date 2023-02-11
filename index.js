@@ -6,7 +6,6 @@ async function traerProductos() {
   try {
     const resultado = await fetch(url);
     const respuesta = await resultado.json();
-    // respuestaCarrito(respuesta)
     pintarProductos(respuesta);
   } catch (error) {
     console.log(error);
@@ -17,8 +16,6 @@ const pintarProductos = (respuesta) => {
   const contenedor = document.getElementById("container");
   const div = document.createElement("div");
   respuesta.forEach((productos) => {
-    /*el paso siguiente es para guardar todos estos "atributos" del array de productos*/
-
     contenedor.innerHTML += `<div class="card" style="width: 18rem;">
         <img class="card-img-top" src="${productos.imagen}" alt="Card image cap">
         <div class="card-sody">
@@ -57,6 +54,5 @@ const pintarProductos = (respuesta) => {
 
       actualizarCarritoPorEliminados(carrito);
     }
-    // console.log(carrito)
   };
 };
