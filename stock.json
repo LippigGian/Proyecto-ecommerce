@@ -1,0 +1,67 @@
+[
+    {
+        "id": 1,
+        "nombre": "Musculosa",
+        "tipo": "remera",
+        "desc": "Musculosa Negra Wemul Summer",
+        "precio": 12500,
+        "talle": "L",
+        "imagen": "img/product-1.png" ,
+        "cantidad":1
+    },
+
+    {
+        "id": 2,
+        "nombre": "Vestido",
+        "tipo": "vestido",
+        "desc": "Vestido Negro Vindaloo Emma",
+        "precio": 8950,
+        "talle": "L",
+        "imagen": "img/product-2.png",
+        "cantidad":1
+    },
+
+    {
+        "id": 3,
+        "nombre": "Smoking",
+        "tipo": "smoking",
+        "desc": "Smoking Negro Equus Slim Tulum",
+        "precio": 65000,
+        "talle": "S",
+        "imagen": "img/product-3.png",
+        "cantidad":1
+    },
+
+    {
+        "id": 4,
+        "nombre": "Sweater",
+        "tipo": "sweater",
+        "desc": "Sweater Negro Harvey  Oversize",
+        "precio": 4500,
+        "talle": "L",
+        "imagen": "img/product-4.png",
+        "cantidad":1
+    },
+
+    {
+        "id": 5,
+        "nombre": "Tapado",
+        "tipo": "tapado",
+        "desc": "Campera Larga Negra Vespertine ",
+        "precio": 36000,
+        "talle": "L",
+        "imagen": "img/product-5.png",
+        "cantidad":1
+    },
+
+    {
+        "id": 6,
+        "nombre": "Vestido",
+        "tipo": "vestido",
+        "desc": "Vestido Negro Nano Gianna I",
+        "precio": 5050,
+        "talle": "L",
+        "imagen":" img/product-6.png",
+        "cantidad":1
+    }
+]

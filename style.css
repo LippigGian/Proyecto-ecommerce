@@ -1,0 +1,35 @@
+.container
+{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+
+}
+
+h1
+{
+    text-align: center;
+}
+
+.card-body
+{
+    width: 250px !important;
+}
+
+/* .card
+{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: self-end;
+    
+} */
+
+/* .card-img-top
+{
+  
+   width: 250px;
+   height: 350px;
+} */
+
